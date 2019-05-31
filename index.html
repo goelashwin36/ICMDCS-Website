@@ -29,9 +29,24 @@
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
 
+  <script src="lib/jquery/jquery.min.js"></script>
+
+  <script>
+      console.log('Loaded');
+      $(window).ready(function(){
+      $('#loader').delay(1000).fadeOut(350);
+  });
+  </script>
+
+
 </head>
 
 <body>
+
+<!--Preloader-->
+<div class="preloader" id="loader">
+  <img id="img_preloader" src="img/loader.svg" alt="Loading...">
+</div>
 
   <!--==========================
     Header
