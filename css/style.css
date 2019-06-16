@@ -210,12 +210,12 @@ h6 {
   white-space: nowrap;
 }
 
-.nav-menu > li {
+.nav-menu>li {
   float: left;
 }
 
-.nav-menu li:hover > ul,
-.nav-menu li.sfHover > ul {
+.nav-menu li:hover>ul,
+.nav-menu li.sfHover>ul {
   display: block;
 }
 
@@ -272,11 +272,11 @@ h6 {
   color: #fff;
 }
 
-.nav-menu > li {
+.nav-menu>li {
   margin-left: 8px;
 }
 
-.nav-menu > li > a:before {
+.nav-menu>li>a:before {
   content: "";
   position: absolute;
   width: 0;
@@ -289,8 +289,8 @@ h6 {
 }
 
 .nav-menu a:hover:before,
-.nav-menu li:hover > a:before,
-.nav-menu .menu-active > a:before {
+.nav-menu li:hover>a:before,
+.nav-menu .menu-active>a:before {
   visibility: visible;
   width: 100%;
 }
@@ -340,7 +340,7 @@ h6 {
   border-radius: 3px;
 }
 
-.nav-menu ul li:hover > a {
+.nav-menu ul li:hover>a {
   background: #f82249;
   color: #fff;
 }
@@ -473,16 +473,17 @@ body.mobile-nav-active #mobile-nav-toggle {
 #intro:before {
   content: "";
   /* background: rgba(6, 12, 34, 0.4); */
-  
+
   position: absolute;
   bottom: 0;
   top: 0;
   left: 0;
   right: 0;
   /* box-shadow: inset 0px 0px 3px black; */
-  background: radial-gradient(transparent, black); 
+  background: radial-gradient(transparent, black);
 
 }
+
 /* #intro:after{
   content: '';
   position: absolute;
@@ -800,7 +801,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 15px;
   margin-bottom: 10px;
 }
-#speakers .soon h3{
+
+#speakers .soon h3 {
   font-size: 26px;
   text-transform: uppercase;
   text-align: center;
@@ -810,7 +812,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 }
 
-#speakers .soon{
+#speakers .soon {
   margin-bottom: 60px;
   position: relative;
   padding-bottom: 20px;
@@ -830,17 +832,18 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*--------------------------------------------------------------
 # Call for Papers
 --------------------------------------------------------------*/
-#call-for-papers{
+#call-for-papers {
   padding: 60px 0 60px 0;
 }
-#call-for-papers h6{
+
+#call-for-papers h6 {
   color: #0e1b4d;
   margin: 30px 0;
   font-size: 30px;
   letter-spacing: 1px;
 }
 
-#call-for-papers p{
+#call-for-papers p {
   margin: 30px 0;
   font-size: 16px;
 }
@@ -951,6 +954,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #gallery {
   padding: 60px 0;
 }
+
 /*--------------------------------------------------------------
 # supporters Section
 --------------------------------------------------------------*/
@@ -1095,7 +1099,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #about-more .card {
   border: none;
   border-radius: 5px;
-  transition: all  0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   box-shadow: 0 10px 25px 0 rgba(6, 12, 34, 0.1);
   margin-top: 30px;
 }
@@ -1158,7 +1162,34 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about-more #buy-ticket-modal .btn:hover {
-  background-color: #e0072f;}
+  background-color: #e0072f;
+}
+
+/*--------------------------------------------------------------
+# Committees
+--------------------------------------------------------------*/
+#committee {
+  padding: 120px 0 60px 0;
+}
+
+#committee h6 {
+  color: #0e1b4d;
+  margin: 30px 0;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+#committee ul li {
+  margin: 5px 0;
+  font-size: 17px;
+}
+
+#committee span {
+  font-weight: 600;
+  font-size: 19px;
+}
+
 
 /*--------------------------------------------------------------
 # Buy Tickets Section
@@ -1171,7 +1202,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #buy-tickets .card {
   border: none;
   border-radius: 5px;
-  transition: all  0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   box-shadow: 0 10px 25px 0 rgba(6, 12, 34, 0.1);
 }
 
@@ -1194,10 +1225,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 30px;
   margin: 0;
 }
-#buy-tickets .card ul{
+
+#buy-tickets .card ul {
   list-style-type: none;
   margin: 0 !important;
-  padding: 5px; !important;
+  padding: 5px;
+   !important;
 }
 
 #buy-tickets .card ul li {
@@ -1205,7 +1238,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: center
 }
 
-#buy-tickets .card ul .price{
+#buy-tickets .card ul .price {
   font-weight: 600;
   color: #112363;
 }
@@ -1246,13 +1279,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 #buy-tickets #buy-ticket-modal .btn:hover {
   background-color: #e0072f;
 }
-#buy-tickets p{
+
+#buy-tickets p {
   text-align: center;
   margin-top: 30px;
 }
-#buy-tickets .note{
+
+#buy-tickets .note {
   font-weight: 700;
 }
+
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
@@ -1518,6 +1554,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 @media (min-width: 768px) {
+
   #contact .contact-address,
   #contact .contact-phone,
   #contact .contact-email {
@@ -1634,21 +1671,24 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #map {
   margin-top: 60px;
-  height: 400px;  /* The height is 400 pixels */
-  width: 100%;  /* The width is the width of the web page */
- }
+  height: 400px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
 
- /*===========Preloader===========*/
+/*===========Preloader===========*/
 .preloader {
   background-color: #141414;
-  top:0;
-  bottom:0;
-  right:0;
-  left:0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
   z-index: 9999;
   position: fixed;
 
 }
+
 .preloader img {
   display: block;
   position: fixed;
