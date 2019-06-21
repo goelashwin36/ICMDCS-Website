@@ -15,7 +15,7 @@ jQuery(document).ready(function ($) {
 
   // Header fixed on scroll
   $(window).scroll(function () {
-    if (window.location.pathname.indexOf('index') !== -1) {
+    if (window.location.pathname.indexOf('committee') === -1) {
       if ($(this).scrollTop() > 100) {
         $('#header').addClass('header-scrolled');
       } else {
@@ -24,7 +24,7 @@ jQuery(document).ready(function ($) {
     }
   });
 
-  if (window.location.pathname.indexOf('index') !== -1) {
+  if (window.location.pathname.indexOf('committee') === -1) {
     if ($(window).scrollTop() > 100) {
       $('#header').addClass('header-scrolled');
 
