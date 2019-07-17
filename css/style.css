@@ -536,6 +536,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-weight: 700;
   font-size: 35px;
 }
+#intro h3 {
+  color: #ebebeb;
+  font-weight: 700;
+}
 
 #intro .play-btn {
   width: 94px;
@@ -1568,6 +1572,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 
   #intro h1 {
     font-size: 34px;
+  }
+  #intro h3 {
+    font-size: 20px;
   }
 
   #intro p {
