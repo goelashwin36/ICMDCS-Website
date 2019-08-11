@@ -999,56 +999,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: all 0.4s ease-in-out;
 }
 
-/*--------------------------------------------------------------
-# F.A.Q Section
---------------------------------------------------------------*/
-
-#faq {
-  padding: 60px 0;
-}
-
-#faq #faq-list {
-  padding: 0;
-  list-style: none;
-}
-
-#faq #faq-list li {
-  border-bottom: 1px solid #ddd;
-}
-
-#faq #faq-list a {
-  padding: 18px 0;
-  display: block;
-  position: relative;
-  font-family: "Raleway", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 600;
-  padding-right: 20px;
-}
-
-#faq #faq-list i {
-  font-size: 24px;
-  position: absolute;
-  right: 0;
-  top: 16px;
-}
-
-#faq #faq-list p {
-  margin-bottom: 20px;
-}
-
-#faq #faq-list a.collapse {
-  color: #f82249;
-}
-
-#faq #faq-list a.collapsed {
-  color: #000;
-}
-
-#faq #faq-list a.collapsed i::before {
-  content: "\f055" !important;
-}
 
 /*--------------------------------------------------------------
 # Subscribe Section
@@ -1282,7 +1232,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   background-color: #e0072f;
 }
 
-#registration p {
+#registration .note {
   text-align: center;
   margin-top: 30px;
 }
@@ -1589,11 +1539,11 @@ body.mobile-nav-active #mobile-nav-toggle {
     bottom: 15px;
   }
 
-  #faq #faq-list a {
+  #submission #submission-list a {
     font-size: 18px;
   }
 
-  #faq #faq-list i {
+  #submission #submission-list i {
     top: 13px;
   }
 }
@@ -1653,4 +1603,132 @@ body.mobile-nav-active #mobile-nav-toggle {
   width: 50px;
   height: 50px;
   margin: auto;
+}
+
+/*--------------------------------------------------------------
+# Submission Section
+--------------------------------------------------------------*/
+
+
+#submission{
+  margin-top: 0px !important;
+  padding-top: 0% !important;
+}
+.submission-group {
+  overflow: hidden;
+  margin-bottom: 24px;
+  /* background: linear-gradient(150deg, #f82249, #f82249);        */
+  min-height: 64px;
+  border-radius: 45px;
+  border: 3px solid #f82249;
+  color: #0e1b4d;
+  transition: box-shadow .6s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.submission-head {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 26px 36px;
+  border-color: #f82249;
+  border-width: 4px;
+  background-color: #f82249;
+  border-radius: 32px;
+  color: #0e1b4d;
+  position: relative;
+  transition: transform .6s ease;
+}
+
+
+.submission-head:hover{
+  cursor: pointer;
+
+}
+
+.submission-head h3 {
+  display: block;
+  font-size: 20px !important;
+  margin: 0 auto !important;
+  padding: 0 15px 0 0 !important;
+}
+
+
+.link {
+  font-size: 12px !important;
+  line-height: 1.333;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-decoration: none !important;
+}
+
+.submission-body {
+  display: none;
+  align-items: center;
+  padding: 20px 16px 5px 16px;
+  color: #0e1b4d;
+  position: relative;
+}
+
+@media (min-width:768px) {
+  .submission-body {
+      padding: 24px 36px
+  }
+}
+.ques{
+  font-style: italic;
+  font-size: 20px;
+  font-family: inherit;
+  letter-spacing: 0;
+  line-height: 1.333;
+  padding-bottom: 10px !important;
+  font-weight: 700;
+}
+
+.ans{
+  margin-bottom: 30px;
+  font-size: 16px;
+  text-align: left !important;
+}
+.ans p{
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.ans .head{
+  font-weight: 600;
+  padding: 0 !important;
+  margin: 20px 0 10px 0 !important;
+}
+
+.ans ol{
+  padding-right: 15px;
+}
+
+.round{
+  background: white;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  float: right !important;
+  right: 10px;
+  display: block;
+  position: absolute;
+}
+.round img{
+  top: 12px;
+  right: 12px;
+  display: block;
+  position: absolute;
+  transition: transform .6s ease;
+  width: 26px;
+  height: 26px;
+}
+.is-active, .submission-head:hover img {
+  -ms-transform: rotate(45deg); /* IE 9 */
+  -webkit-transform: rotate(45deg); /* Safari */
+  transform: rotate(45deg);
 }

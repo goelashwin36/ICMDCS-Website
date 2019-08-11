@@ -129,7 +129,6 @@ jQuery(document).ready(function ($) {
       }
     }
   });
-
   // Gallery carousel (uses the Owl Carousel library)
   $(".gallery-carousel").owlCarousel({
     autoplay: true,
@@ -141,6 +140,16 @@ jQuery(document).ready(function ($) {
     }
   });
 
-  // custom code
+  //Submission
+$('.submission-head').click(function(){
+  var thisGrpId=$(this).parent().attr('id');
+  ($(this).find('.round')).find('img').toggleClass('is-active');
+  $('#'+thisGrpId).find('.submission-body').slideToggle(500,'swing');
+
+  console.log(thisGrpId);
+});
+
+
+  
 
 });
